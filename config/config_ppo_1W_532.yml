@@ -1,0 +1,25 @@
+dataset_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE_20241124/dataset/contest.csv"
+design_space_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE_20241124/dataset/design-space.xlsx"
+
+reports_folder_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE_20241124/reports/"
+avg_reward_curve_path: "avg_reward_curve.pdf"
+total_reward_curve_path: "total_reward_curve.pdf"
+epsilon_curve_path: "epsilon_curve.pdf"
+# preference: [0.7,0.2,0.1]
+# preference: [0.3,0.6,0.1]
+preference: [0.5,0.3,0.2]
+first_microarch: [4,1,1,1,8,1,1,8,1,1,8,8,8,16,34,62,58,8,8,32,4,1,16,64,4,0,2,1,8] 
+
+
+mem_size: 8000
+max_steps: 80
+k_step_update: 8
+frame_skipped: 1
+lr: 0.001
+max_episodes: 80
+num_epochs: 2
+reward_coef: 1.732
+
+gamma: 0.99
+clip_param: 0.3
+entropy_coef: 1

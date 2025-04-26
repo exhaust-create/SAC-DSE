@@ -1,0 +1,44 @@
+dataset_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE_20241124/dataset/contest.csv"
+design_space_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE_20241124/dataset/design-space.xlsx"
+
+reports_folder_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE_20241124/reports/"
+# reports_folder_path: "/ai/zsh/RL-DSE-FinalVersion/reports/"
+avg_reward_curve_path: "avg_reward_1W_532.pdf"
+total_reward_curve_path: "total_reward_1W_532.pdf"
+epsilon_curve_path: "epsilon_curve.pdf"
+# preference: [0.7,0.2,0.1]
+# preference: [0.3,0.6,0.1]
+preference: [0.5,0.3,0.2]
+first_microarch: [4,1,1,1,8,1,1,8,1,1,8,8,8,16,34,62,58,8,8,32,4,1,16,64,4,0,2,1,8] 
+
+mem_size: 8000
+max_steps: 80
+tau: 0.005
+k_step_update: 8
+frame_skipped: 1
+lr: 0.0001
+max_episodes: 80 # Experiments show 80 episodes is enough for convergence.
+batch_size: 25
+num_epochs: 2
+reward_coef: 1.732
+reward_scale: 100
+alpha: 0.5
+
+value_coef: 0.1
+gamma: 0.95
+entropy_coef: 1
+
+# MicroAL settings
+initialize:
+  Nrted: 59
+  mu: 0.1
+  sig: 0.1
+  # the total samples in a cluster
+  batch: 15
+  decoder-threshold: 1.2
+  # decoder-threshold: 35
+  # number for clusters
+  cluster: 5
+  # the iterations of the clustering
+  clustering-iteration: 1000
+  vis-micro-al: False

@@ -1,0 +1,24 @@
+dataset_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE v2/dataset/contest.csv"
+design_space_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE v2/dataset/design-space.xlsx"
+
+reports_folder_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE v2/reports/"
+avg_reward_curve_path: "avg_reward.pdf"
+total_reward_curve_path: "total_reward.pdf"
+epsilon_curve_path: "epsilon_curve.pdf"
+
+preference: [0.4,0.3,0.3]
+first_microarch: [8,4,4,2,22,4,4,36,4,2,28,20,32,40,132,118,118,36,36,64,8,1,32,64,8,0,8,2,32]
+
+mem_size: 8000
+max_steps: 60
+k_step_update: 8
+frame_skipped: 1
+lr: 0.001
+max_episodes: 80
+num_epochs: 2
+reward_coef: 1.732
+punishment: -0.08
+
+gamma: 0.99
+clip_param: 0.3
+entropy_coef: 1

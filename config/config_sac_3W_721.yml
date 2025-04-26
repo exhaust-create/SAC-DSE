@@ -1,0 +1,43 @@
+dataset_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE v2/dataset/contest.csv"
+design_space_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE v2/dataset/design-space.xlsx"
+
+reports_folder_path: "E:/VMWare/VMWare_Share/MyCode/RL-DSE v2/reports/"
+avg_reward_curve_path: "avg_reward_3W_721.pdf"
+total_reward_curve_path: "total_reward_3W_721.pdf"
+epsilon_curve_path: "epsilon_curve.pdf"
+
+preference: [0.7,0.2,0.1]
+first_microarch: [8,3,3,1,16,3,3,32,3,1,24,14,21,30,108,100,96,28,28,64,8,2,16,64,4,1,4,1,32]
+
+mem_size: 8000
+max_steps: 50
+tau: 0.005
+k_step_update: 8
+frame_skipped: 1
+lr: 0.0002
+max_episodes: 80
+batch_size: 25
+num_epochs: 3
+reward_coef: 1.732
+reward_scale: 200
+alpha: 0.5
+punishment: -0.1
+
+value_coef: 0.1
+gamma: 0.8
+entropy_coef: 1
+
+# MicroAL settings
+initialize:
+  Nrted: 59
+  mu: 0.1
+  sig: 0.1
+  # the total samples in a cluster
+  batch: 15
+  decoder-threshold: 1.2
+  # decoder-threshold: 35
+  # number for clusters
+  cluster: 5
+  # the iterations of the clustering
+  clustering-iteration: 1000
+  vis-micro-al: False
